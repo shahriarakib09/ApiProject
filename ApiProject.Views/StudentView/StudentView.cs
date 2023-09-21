@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ApiProject.Views.StudentView
 {
-    internal class StudentView
+    public class StudentView
     {
         public Int32 Id { get; set; }
 
