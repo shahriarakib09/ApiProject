@@ -12,6 +12,13 @@ namespace ApiProject.Features.Repositories.StudentRepository
     {
         Task<IReadOnlyList<StudentView>> GetAllStudentListAsync();
 
+        Task<StudentView> GetStudentByIdListAsync(Int32 _Id);
+
+
         Task<string> CreateStudents(StudentView _studentView);
+
+        Task<string> UpdateStudents(int _Id, StudentView _studentView);
+
+        Task<string> DeleteStudents(int _Id);
     }
 }
